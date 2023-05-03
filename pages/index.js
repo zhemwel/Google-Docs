@@ -93,29 +93,29 @@ export default function Home() {
         >
             {
                 loader
-                ? <div className="classic-4"></div>
-                : <ModalBody>
-                    <input
-                        value={input}
-                        onChange={(e) => setInput(e.target.value)}
-                        className="outline-none w-full mb-7 mt-6"
-                        placeholder="Enter the Name of Document"
-                        onKeyDown={(e) => e.key === "Enter" && createDocument()}
-                    />
-                    <ModalFooter>
-                        <Button
-                            color="blue"
-                            buttonType="link"
-                            onClick={(e) => {setShowmodal(false); setInput("")}}
-                            ripple="dark"
-                        >
-                            Cancel
-                        </Button>
-                        <Button color="blue" onClick={createDocument} ripple="light">
-                            Create
-                        </Button>
-                    </ModalFooter>
-                </ModalBody>
+                    ? <div className="classic-4"></div>
+                    : <ModalBody>
+                        <input
+                            value={input}
+                            onChange={(e) => setInput(e.target.value)}
+                            className="outline-none w-full mb-7 mt-6"
+                            placeholder="Enter the Name of Document"
+                            onKeyDown={(e) => e.key === "Enter" && createDocument()}
+                        />
+                        <ModalFooter>
+                            <Button
+                                color="blue"
+                                buttonType="link"
+                                onClick={(e) => {setShowmodal(false); setInput("")}}
+                                ripple="dark"
+                            >
+                                Cancel
+                            </Button>
+                            <Button color="blue" onClick={createDocument} ripple="light">
+                                Create
+                            </Button>
+                        </ModalFooter>
+                    </ModalBody>
             }
         </Modal>
     )
@@ -132,7 +132,7 @@ export default function Home() {
             <section className="bg-[#F89F9FA] pb-10 px-10">
                 <div className="max-w-3xl mx-auto ">
                     <div className="flex items-center justify-between py-6">
-                        <h2 className="text-gray-600 text-lg">Start a new document</h2>
+                        <h2 className="text-gray-600 text-lg">Start A New Document</h2>
                         <Button
                             className="border-0"
                             color="gray"
