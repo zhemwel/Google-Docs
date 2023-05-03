@@ -4,8 +4,8 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build",
-        "start": "next start"
+        "start": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
+        "build": "SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build"
     },
     "dependencies": {
         "@material-tailwind/react": "0.3.4",
