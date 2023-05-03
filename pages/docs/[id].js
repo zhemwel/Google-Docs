@@ -7,7 +7,6 @@ import { getSession, signOut, useSession } from "next-auth/client"
 import Login from "../../components/Login"
 import TextEditor from "../../components/TextEditor"
 import Image from "next/dist/client/image"
-import { async } from "regenerator-runtime"
 
 const Doc = () => {
     const [session] = useSession()
